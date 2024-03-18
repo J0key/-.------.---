@@ -1,16 +1,18 @@
-// hamburger
+// Hamburger
 
 const hamburger = document.querySelector("#hamburger");
-const nav = document.querySelector("#nav");
+const navMenu = document.querySelector("#nav-menu");
 
-hamburger.addEventListener("click", function () {
-    hamburger.classList.toggle("hamburger-active");
-    nav.classList.toggle('hidden');
+hamburger.addEventListener('click', function () {
+  hamburger.classList.toggle("hamburger-active");
+  navMenu.classList.toggle('hidden');
 });
 
-window.addEventListener('click', function (e) {
-    if (e.target != hamburger && e.target != nav) {
-        hamburger.classList.remove("hamburger-active");
-        nav.classList.add('hidden');
-    }
-})
+
+// klik diluar hamburger
+window.addEventListener('click', function (e){
+  if(e.target != hamburger && e.target != navMenu){
+    hamburger.classList.remove("hamburger-active");
+    navMenu.classList.add('hidden');
+  }
+});

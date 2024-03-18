@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,12 +19,44 @@
   <body>
 
     <!-- Navbar Section Start -->
-    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10 px-4 py-6">
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10 px-4 py-6 ">
       <div class="container">
         <div class="flex items-center justify-between relative px-4 lg:px-28 ">
           <div class="px-4 flex flex-wrap ">
             <img src="/dist/img/paws.png" alt="" class="h-6 mr-2">
             <a href="" class="madimi text-[#F98182]">Cats <span class="text-black"> Mommy</span></a>
+          </div>
+
+          <div class="flex items-center lg:px-28">
+            <!-- hamburger -->
+            <button id="hamburger" type="button" name="hamburger" class="block absolute lg:hidden right-5">
+              <span class="hamburger-line w-8 origin-top-left transition duration-300 ease-in-out"></span>
+              <span
+                class="hamburger-line w-5 transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line w-8 origin-bottom-left transition duration-300 ease-in-out"
+              ></span>
+            </button>
+
+
+            <nav id="nav-menu"  class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full
+             lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none ">
+              <ul class="block lg:flex madimi">
+                <li class="group">
+                  <a class="group-hover:text-[#F98182] mx-8 flex py-2" href="#home">Home</a>
+                </li>
+                <li class="group">
+                  <a class="group-hover:text-[#F98182] mx-8 flex py-2" href="#about">About Us</a>
+                </li>
+                <li class="group">
+                  <a class="group-hover:text-[#F98182] mx-8 flex py-2" href="#service">Our Services</a>
+                </li>
+                <li class="group">
+                  <a class="group-hover:text-[#F98182] mx-8 flex py-2" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </nav>
           </div>
           
         </div>
@@ -83,7 +115,7 @@
     <!-- Hero Section End -->
 
     <!-- Sponsor Section Start -->
-    <section id="#sponsor" class="pt-12">
+    <section id="sponsor" class="pt-12">
       <div class="container">
         <div class="w-full px-4">
           <div class="flex flex-wrap items-center justify-center">
@@ -117,7 +149,7 @@
     <!-- Card Section Start -->
     <section id="card" class="pt-12 pb-28 px-4">
       <div class="container">
-        <div class="w-ful px-4 lg:px-28">
+        <div class="w-ful lg:px-28">
         <div class="flex flex-wrap justify-between lg:justify-around">
 
           
@@ -213,7 +245,7 @@
     <!-- Card Section End -->
 
     <!-- About Section Start -->
-    <section id="#about" class="pt-4 pb-32 px-6 lg:px-28">
+    <section id="about" class="pt-4 pb-32 px-6 lg:px-28">
       <div class="container  bg-[#FFEDED] px-6 py-6 rounded-lg overflow-hidden">
         <div class="flex flex-wrap">
           <div class="justify-between items-center w-full self-center py-4 lg:flex lg:flex-wrap lg:self-start">
@@ -240,10 +272,10 @@
     <!-- About Section End -->
 
     <!-- Services Section Start -->
-    <section id="#service" class="pt-12 pb-28 px-4  bg-[#FFF3F3]">
+    <section id="service" class="pt-12 pb-28 px-4  bg-[#FFF3F3]">
       <div class="container">
 
-        <div class="w-full px-4 lg:px-28 ">
+        <div class="w-full lg:px-28 ">
         <h1 class="madimi text-[#FF5756] text-center mb-6">Our Services</h1>
         <div class="flex flex-wrap justify-between lg:justify-evenly">
           <div class="bg-white shadow-xl rounded-xl overflow-hidden mb-10 max-w-[200px] lg:max-w-[250px] self-center ">
@@ -300,7 +332,7 @@
     <!-- Services Section End -->
 
     <!-- Footer Section Start -->
-    <section id="#footer" class="pt-12 pb-20 px-4">
+    <section id="contact" class="pt-12 pb-20 px-4">
       <div class="container">
         <div class="w-full px-4 lg:px-28">
         <h1 class="madimi text-[#FF5756] text-center mb-6">Contact</h1>
